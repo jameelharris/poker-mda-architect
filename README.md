@@ -15,6 +15,11 @@ The Silver layer processes and refines the data from the Bronze layer. It involv
 ### Gold Layer
 The Gold layer delivers highly aggregated and denormalized data optimized for specific business use cases, reporting, and machine learning models. This layer focuses on performance and ease of consumption for end-users.
 
+## Data Architecture
+![Poker ERD](./docs/poker-erd.drawio.svg)
+
+[View Full Diagram](./docs/poker-erd.drawio.svg)
+
 ## Tech Stack
 *   **dbt (data build tool):** Used for transforming data in our data warehouse.
 *   **BigQuery:** Our scalable and serverless data warehouse.
@@ -22,4 +27,3 @@ The Gold layer delivers highly aggregated and denormalized data optimized for sp
 
 ## How to Run
 [//]: # (TODO: Add detailed instructions on how to set up and run the project)
-Please refer to future documentation for instructions on how to set up and run this project.
