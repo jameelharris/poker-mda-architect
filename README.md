@@ -16,7 +16,7 @@ The Silver layer processes and refines the data from the Bronze layer. It involv
 The Gold layer delivers highly aggregated and denormalized data optimized for specific business use cases, reporting, and machine learning models. This layer focuses on performance and ease of consumption for end-users.
 
 ## Data Architecture
-![Poker ERD](./docs/poker-erd.drawio.svg)
+<img src="docs/poker-erd.drawio.svg" width="100%" alt="Poker Data Architecture ERD">
 
 [View Full Diagram](./docs/poker-erd.drawio.svg)
 
