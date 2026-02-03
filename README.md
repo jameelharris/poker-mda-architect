@@ -1,19 +1,18 @@
 # Poker MDA
 
-## Project Overview
-This project implements a Medallion Architecture (MDA) for poker data, structuring data into Bronze, Silver, and Gold layers to ensure data quality, consistency, and usability for analytics and machine learning.
+## Business Context
+<p align="center">
+  <img src="docs/business-arch.svg" width="1000" alt="Business Architecture Diagram">
+</p>
 
-## Architecture
-The architecture follows a Medallion pattern, organized into three distinct layers:
+[View Full Diagram](https://s.icepanel.io/dLY1ttD4YFdhq8/JUWB)
 
-### Bronze Layer
-This layer contains raw, immutable data ingested directly from source systems. Data here is stored as-is, preserving the original format and history.
+## System Architecture
+<p align="center">
+  <img src="docs/system-arch.svg" width="1000" alt="System Architecture Diagram">
+</p>
 
-### Silver Layer
-The Silver layer processes and refines the data from the Bronze layer. It involves data cleaning, standardization, filtering, and combining disparate datasets. This layer provides a "single source of truth" for core business entities.
-
-### Gold Layer
-The Gold layer delivers highly aggregated and denormalized data optimized for specific business use cases, reporting, and machine learning models. This layer focuses on performance and ease of consumption for end-users.
+[View Full Diagram](https://s.icepanel.io/dLY1ttD4YFdhq8/fsjK)
 
 ## Data Architecture
 <p align="center">
