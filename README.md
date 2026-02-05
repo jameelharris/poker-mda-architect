@@ -4,7 +4,7 @@ Live poker, unlike its online counterpart, lacks a commercial dataset derived fr
 
 The absence of these datasets has led to several systemic failures:
 
-* Sector Stagnation: Domains such as game hosting, professional coaching, and sports journalism—which serve as primary growth channels for the game—have seen their efficiency stagnate or regress over the past two decades due to a reliance on manual data entry and anecdotal analysis.
+* Sector Stagnation: Domains such as game hosting, professional coaching, and sports journalism—which serve as primary growth channels for the live poker—have seen their efficiency stagnate or regress over the past two decades due to a reliance on manual data entry and anecdotal analysis.
 
 * Failed Interdependence: There is a total lack of interoperability between media production and data-driven utility. Without a shared data layer, the industry cannot sustain logical growth pipelines—such as casinos identifying struggling players for coaching referrals, or journalists using verified win-rate improvements to craft compelling "player journey" narratives. This disconnect prevents the poker industry from leveraging the interdependent ecosystems common in other professional sports.
 
