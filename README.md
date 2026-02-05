@@ -31,6 +31,18 @@ The system operates through four core pillars:
 
 [View Full Diagram](https://s.icepanel.io/dLY1ttD4YFdhq8/fsjK)
 
+## Standardized Data Schema
+
+To ensure maximum utility across the poker ecosystem, the Hand History Hub utilizes a variant-agnostic data model. This schema is designed to normalize the complexities of disparate poker rules into a unified relational structure.
+
+* Variant Agnostic Design: By abstracting game logic into "Action Sequences" and "State Definitions," the model seamlessly handles any poker variant—from standard No-Limit Hold'em to complex mixed games—without requiring schema modifications. This ensures that journalists and coaches can use a single set of analytical tools to query any game type stored in the registry.
+
+* Unified Event Stream: The schema treats every hand as a series of atomic events (e.g., Deal, Bet, Fold, Showdown). This "Event Sourcing" approach allows the data to represent the complete narrative of a hand, regardless of the number of players or the specific betting structure used.
+
+* Future-Proofed for Real-Time: While the initial scope focuses on batch processing, the data model is architected for streaming-first compatibility. By utilizing standardized timestamps and unique event IDs, the schema is prepared to transition from processing historical broadcasts to handling live, sub-second data feeds in future MVPs without necessitating a database migration.
+
+### Data Model
+<img src="docs/poker-erd.drawio.svg" width="100%" alt="Poker Data Architecture ERD">
 
 ## MVP 1: Initial Project Scope
 
@@ -44,19 +56,6 @@ The primary objective for the first phase of this project is the deployment of a
 
 * Analytical Readiness: Ensuring the data schema is optimized for initial BI tool integration, allowing the first wave of "Poker Pro" and "Media" personas to run complex queries against the dataset.
 
-
-## Standardized Data Schema
-
-To ensure maximum utility across the poker ecosystem, the Hand History Hub utilizes a variant-agnostic data model. This schema is designed to normalize the complexities of disparate poker rules into a unified relational structure.
-
-* Variant Agnostic Design: By abstracting game logic into "Action Sequences" and "State Definitions," the model seamlessly handles any poker variant—from standard No-Limit Hold'em to complex mixed games—without requiring schema modifications. This ensures that journalists and coaches can use a single set of analytical tools to query any game type stored in the registry.
-
-* Unified Event Stream: The schema treats every hand as a series of atomic events (e.g., Deal, Bet, Fold, Showdown). This "Event Sourcing" approach allows the data to represent the complete narrative of a hand, regardless of the number of players or the specific betting structure used.
-
-* Future-Proofed for Real-Time: While the initial scope focuses on batch processing, the data model is architected for streaming-first compatibility. By utilizing standardized timestamps and unique event IDs, the schema is prepared to transition from processing historical broadcasts to handling live, sub-second data feeds in future MVPs without necessitating a database migration.
-
-### Data Model
-<img src="docs/poker-erd.drawio.svg" width="100%" alt="Poker Data Architecture ERD">
 
 [View Full Diagram](./docs/poker-erd.drawio.svg)
 
